@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import WorkSection from '@/components/WorkSection';
 import Footer from '@/components/Footer';
 import SplashCursor from '@/components/SplashCursor';
+import Testimony from '@/components/testimony';
 
 const Index = () => {
   return (
@@ -24,6 +25,8 @@ const Index = () => {
           title="My Experiments"
           subtitle="Personal projects and explorations in UI/UX design, motion graphics, and interaction design."
         />
+        <Testimony
+          />
       </main>
       
       <Footer />
