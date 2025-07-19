@@ -75,8 +75,10 @@ All colors MUST be HSL.
 @layer components {
   /* Glass morphism effect */
   .glass {
-    @apply backdrop-blur-xl bg-glass-bg/30 border border-glass-border/30;
-    box-shadow: var(--glass-shadow), 0 8px 32px hsl(var(--background) / 0.12);
+    @apply backdrop-blur-xl border;
+    background: hsl(var(--glass-bg) / 0.3);
+    border-color: hsl(var(--glass-border) / 0.3);
+    box-shadow: 0 0 0 1px hsl(var(--glass-border) / 0.2), 0 8px 32px hsl(var(--background) / 0.12);
   }
 
   /* Gradient button */
