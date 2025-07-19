@@ -1,12 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import WorkSection from '@/components/WorkSection';
+import Footer from '@/components/Footer';
+import SplashCursor from '@/components/SplashCursor';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <SplashCursor />
+      <Navigation />
+      
+      <main>
+        <Hero />
+        
+        <WorkSection 
+          sectionId="work"
+          title="My Work"
+          subtitle="Crafting digital experiences that solve real problems and drive business results."
+        />
+        
+        <WorkSection 
+          sectionId="experiments"
+          title="My Experiments"
+          subtitle="Personal projects and explorations in UI/UX design, motion graphics, and interaction design."
+        />
+      </main>
+      
+      <Footer />
     </div>
   );
 };
