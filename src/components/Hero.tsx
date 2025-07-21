@@ -1,25 +1,28 @@
-import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { motion } from "framer-motion";
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const scrollToWork = () => {
-    const element = document.querySelector('#work');
+    const element = document.querySelector("#work");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const downloadResume = () => {
     // Replace with actual resume download logic
-    console.log('Downloading resume...');
+    console.log("Downloading resume...");
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden"
+    >
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card opacity-90" />
-      
+
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -33,9 +36,9 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl md:text-6xl lg:text-7xl font-grotesk font-bold"
           >
-            Hi, I'm{' '}
+            Hi, I'm{" "}
             <span className="bg-gradient-portfolio bg-clip-text text-transparent">
-              David Ch
+              Veronika Ch
             </span>
           </motion.h1>
 
@@ -45,7 +48,8 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            UX Designer crafting intuitive B2B products and scalable systems.
+            UX Designer crafting intuitive hEllloooasoaosoaso B2B products and
+            scalable systems.
           </motion.p>
 
           <motion.p
@@ -69,7 +73,7 @@ const Hero = () => {
             >
               View My Work
             </Button>
-            
+
             <Button
               variant="outline"
               onClick={downloadResume}
@@ -90,11 +94,11 @@ const Hero = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear",
           }}
           className="absolute top-1/4 left-1/4 w-2 h-2 bg-gradient-portfolio rounded-full opacity-60"
         />
-        
+
         <motion.div
           animate={{
             y: [0, 20, 0],
@@ -103,7 +107,7 @@ const Hero = () => {
           transition={{
             duration: 15,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear",
           }}
           className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-gradient-portfolio rounded-full opacity-40"
         />
