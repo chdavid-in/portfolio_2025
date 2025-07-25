@@ -20,7 +20,7 @@ const Hero = () => {
   };
 
   // 🔁 Role flip animation
-  const roles = ["David Ch", "a UXer", "a Designer", "a Gamer", "a Creator"];
+  const roles = ["David", "a UXer", "a Designer", "a Gamer", "a Creator"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
