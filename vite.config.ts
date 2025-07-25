@@ -5,7 +5,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/portfolio_2025/", // 👈 Add this line to match your repo name
+  base: "/", // 👈 Add this line to match your repo name
   server: {
     host: "::",
     port: 8080,
